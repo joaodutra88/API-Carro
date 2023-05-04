@@ -12,7 +12,7 @@ Essa é uma API que permite o gerenciamento de carros, permitindo as operações
 Clone o repositório:
 
 ```
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/joaodutra88/API-Carro.git
 ```
 
 Entre no diretório do projeto:
@@ -25,12 +25,6 @@ Instale as dependências:
 
 ```
 npm install
-```
-
-Crie um arquivo .env com as seguintes variáveis de ambiente:
-
-```
-MONGODB_URI=URI_DO_BANCO_DE_DADOS
 ```
 
 Inicie o servidor:
@@ -48,7 +42,24 @@ Retorna uma lista de todos os carros cadastrados.
 **Exemplo de resposta:**
 
 ```
-[  {    "_id": "60a7d4f170b0f1cd8a2c4924",    "marca": "Ford",    "modelo": "Fiesta",    "ano": 2018,    "preco": 40000,    "cor": "Azul"  },  {    "_id": "60a7d59c70b0f1cd8a2c4925",    "marca": "Chevrolet",    "modelo": "Onix",    "ano": 2020,    "preco": 50000,    "cor": "Vermelho"  }]
+[
+   {
+      "_id":"60a7d4f170b0f1cd8a2c4924",
+      "marca":"Ford",
+      "modelo":"Fiesta",
+      "ano":2018,
+      "preco":40000,
+      "cor":"Azul"
+   },
+   {
+      "_id":"60a7d59c70b0f1cd8a2c4925",
+      "marca":"Chevrolet",
+      "modelo":"Onix",
+      "ano":2020,
+      "preco":50000,
+      "cor":"Vermelho"
+   }
+]
 ```
 
 ## **`GET /carros/:id`**
